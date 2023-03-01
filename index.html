@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" type="text/css" href="full-form.css">
+
+    <title>Validación de Inicio de Sesión</title>
+</head>
+<body>
+    <div class="container">
+        <form class="registration"  id="registration" action="#">
+        <h1>Registrarse</h1>
+        <label for="username">
+            <span>Usuario:</span>
+            <input type="text" id="username" minlength="3">
+            <ul class="input-requirements">
+                <li>Agregar al menos 3 caracteres</li>
+                <li>Solo debe contener letras y numeros (sin caracteres especiales).</li>
+            </ul>
+        </label>
+        <label for="password">
+            <span>Password:</span>
+            <input type="text" id="password" minlength="8" maxlength="100">
+            <ul class="input-requirements">
+                <li>Al menos 8 caracteres (y menos de 100 caracteres).</li>
+                <li>Contener al menos 1 numero</li>
+                <li>Contener al menos 1 letra minuscula</li>
+                <li>Contener al menos 1 letra mayuscula</li>
+                <li>Contener algun caracter especial (por ejemplo: @ !).</li>
+            </ul>
+        </label>
+        <label for="password_repeat">
+            <span>Repetir password:</span>
+            <input type="text" id="password_repeat" minlength="8" maxlength="100">
+        </label>
+        <br>
+        <input type="submit">
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
